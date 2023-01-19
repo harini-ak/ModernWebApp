@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Calculator</title>
+<script language="javascript">
+var str1=" ";
+function updates(value)
+{
+str1=str1+value;
+document.a.textbox1.value=str1;
+}
+</script></head>
+<body><form name="a">
+<center><table border="10" bordercolor="Pink">
+<tr><td>
+<input type="text" name="textbox1" size="14"><br>
+<input type="button" value="CLR" onClick="textbox1.value"; str1=" ">
+<input type="button" value="%" onClick="updates('%')">
+<input type="button" value="*" onClick="updates('*')">
+<input type="button" value="7" onClick="updates('7')">
+<input type="button" value="8" onClick="updates('8')">
+<input type="button" value="9" onClick="updates('9')">
+<input type="button" value="/" onClick="updates('/')"><br>
+<input type="button" value="6" onClick="updates('6')">
+<input type="button" value="5" onClick="updates('5')">
+<input type="button" value="4" onClick="updates('4')">
+<input type="button" value="+" onClick="updates('+')"><br>
+<input type="button" value="3" onClick="updates('3')">
+<input type="button" value="2" onClick="updates('2')">
+<input type="button" value="1" onClick="updates('1')">
+<input type="button" value="-" onClick="updates('-')"><br>
+<input type="button" value="0" onClick="updates('0')">
+<input type="button" value="00" onClick="updates('00')">
+<input type="button" value="." onClick="updates('.')">
+<input type="button" value="=" onClick="textbox1.value=eval(str1);">
+</table>
+</form>
+</body>
+</html>
