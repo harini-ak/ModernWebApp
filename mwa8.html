@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>
+Button Click Event
+</title>
+<script>
+function loadimg(i,x)
+ {
+switch(x)
+ {
+case 1:
+i.src="lion.jpg"
+break
+case 2:
+i.src="forest.jpg"
+break
+case 3:
+i.src="elephant.jpg"
+break
+  }
+}
+</script>
+</head>
+<body>
+<h1 align=center>Image Swapping Using Buttons</h1>
+<hr color=red size=5><br><br><br><br>
+<center>
+<img src="question.jpg"  height=200  width=150 border=2 name= "im" alt="Check File Path in SRC"><br><br><br>
+<input type=button value="LION" onclick=loadimg(im,1)>
+<input type=button value="FOREST" onclick=loadimg(im,2)>
+<input type=button value="ELEPHANT" onclick=loadimg(im,3)>
+</body></html>
